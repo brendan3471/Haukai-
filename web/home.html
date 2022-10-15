@@ -1,11 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Matahi Historical Society homepage</title>
+    <title>Evavesant Surf</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/icon_image.jfif">
   </head>
   <body>
-    <p>This is a dummy page for demonstrating how you use htaccess.</p>
-    <p>Click <a href="private/private.html">here</a> to access the private page.</p>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand mr-auto logo" href="#">
+        <!-- Source: http://www.omahasurflessons.co.nz/ -->
+        <img src="images/icon_image.jfif" width="30" height="30" class="d-inline-block align-top" alt="">
+        THE HAUKAI RESTAURANT
+      </a>
+
+      <div class="collapse navbar-collapse nav-links" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HAUKAI
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="#location">Location</a>
+              <a class="dropdown-item" href="staff.html">Staff</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Eat and Learn 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="menu.html">Menu</a>
+              <a class="dropdown-item" href="history.html">History</a>
+              <a class="dropdown-item" href="gifts.html">Gifts</a>
+            </div>
+          </div>
+        </li>
+        <li class=" nav-item">
+          <a class="call-to-action nav-link " href="book.html">Book</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+      
+
+
+  </nav>
+
+  <!-- Image slider -->
+
+  
+  <div id="slides" class=" carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- Source: https://commons.wikimedia.org/wiki/File:Hangi_prepare.jpg -->
+        <img src="images/menu_slider_image.jpg" alt="slider image surf">
+        <div class="carousel-caption">
+          <h1 class="display-2">Menu</h1>
+          <h3>Take a look at what we have to offer</h3>
+          <a href="menu.html"><button type="button" name="button" class="btn btn-primary btn-lg">View Menu</button> </a>
+        </div>
+      </div>
+    
+      <div class="carousel-item">
+        <!-- Sorce: https://nzpocketguide.com/maori-history-new-zealand/ -->
+        <img src="images/history_slider_image.jpg" alt="slider image surf">
+        <div class="carousel-caption">
+          <h1 class="display-2">History</h1>
+          <h3>Find out more about our local history and culture</h3>
+          <a href="history.html"><button type="button" name="button" class="btn btn-primary btn-lg">Learn more</button></a>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- Sorce: https://www.newzealand.com/in/feature/traditional-maori-foods/ -->
+        <img src="images/gift_slider_image.jpg" alt="gifts slider backgroud image">
+        <div class="carousel-caption">
+          <h1 class="display-2">Gifts</h1>
+          <h3>Give the gift of food and learning</h3>
+          <a href="gifts.html"><button type="button" name="button" class="btn btn-primary btn-lg">Gifts</button></a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid padding intro">
+    <div class="course row text-center padding">
+      <div class="col-sm-12 col-md-9 col-lg-6">
+        <h3>Welcome to The HAUKAI Restaurant</h3>
+        <p>Haukai Restaurant specializes in Māori kai and is based in the Bay of Islands.
+          The dinner menu features Māori and Pākeha kai options and drinks </p>
+
+
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-6">
+        <!-- Source: https://www.flickr.com/photos/babasteve/5404281432 -->
+        <img src="images/intro_image.jpg" alt="intro side image, maori cultural carving">
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <figure id="pricing">
+    <div class="fixed-wrap">
+      <div id="fixed">
+
+      </div>
+
+    </div>
+  </figure>
+
+
+
+
+  <div class="container-fluid padding" id="location">
+    <div class="course row text-center padding">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <h3>Find us</h3>
+        <p>Haukai Restaurant is located at 1 Island Street
+          Kerikeri, Bay of Islands </p>
+          <div class="text-left">
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>Open days September<br><span style="font-size:18px">2022</span></li>
+            </ul>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li><span class="active">3</span></li>
+            <li><span class="active">4</span></li>
+            <li><span class="active">5</span></li>
+            <li><span class="active">6</span></li>
+            <li><span class="active">7</span></li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li><span class="active">11</span></li>
+            <li><span class="active">12</span></li>
+            <li><span class="active">13</span></li>
+            <li><span class="active">14</span></li>
+            <li>15</li>
+            <li>16</li>
+            <li><span class="active">17</span></li>
+            <li><span class="active">18</span></li>
+            <li><span class="active">19</span></li>
+            <li><span class="active">20</span></li>
+            <li><span class="active">21</span></li>
+            <li>22</li>
+            <li>23</li>
+            <li><span class="active">24</span></li>
+            <li><span class="active">25</span></li>
+            <li><span class="active">26</span></li>
+            <li><span class="active">27</span></li>
+            <li><span class="active">28</span></li>
+            <li>29</li>
+            <li>30</li>
+            <li><span class="active">31</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 map">
+        <!-- Source: https://capturecanada.ca/photos/7375?locale=en -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5894.091307076615!2d174.12681127364394!3d-35.24752141855572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0baff56ab9de9b%3A0x55f61fde0ae474!2s14%20Rewa%20Place%2C%20Russell%200202!5e0!3m2!1sen!2snz!4v1664209745700!5m2!1sen!2snz" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+  
+
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <hr class="light">
+          <p>09 401 4019</p>
+          <p>Haukai@gmail.com</p>
+          <a href="privacy.html">Privacy Statement</a>
+        
+        </div>
+        <div class="col-md-4">
+          <h5>Our Hours</h5>
+          <hr class="light">
+          <p>Monday-Tuesday Closed</p>
+          <p>Wednesday-Thursday 5pm-10pm</p>
+          <p>Friday-Saturday 4pm-10:30pm</p>
+          <p>Sunday 4pm-9pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Locations</h5>
+          <hr class="light">
+          <p>1 Island Street Kerikeri, Bay of Islands</p>
+        </div>
+        <hr class="light">
+        <div class="col-12 footer-bottom">
+
+          <p>&copy; Brendan Mclelland 2022</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/paper.js">
+
+    </script>
+
   </body>
 </html>
